@@ -1,5 +1,6 @@
 '''
 Challenge: https://adventofcode.com/2021/day/2
+By Daniel Lopez Gala with ❤️
 '''
 
 # forwards adds multiplied by aim
