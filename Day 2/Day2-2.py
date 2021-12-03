@@ -3,14 +3,14 @@ Challenge: https://adventofcode.com/2021/day/2
 By Daniel Lopez Gala with ❤️
 '''
 
-# forwards adds multiplied by aim
+# forwards adds X multiplied by aim
 depth: int = 0
 
-# forward adds
+# forward adds X
 horizontal: int = 0
 
-# down increases aim
-# up decreases aim
+# down increases aim by X
+# up decreases aim by X
 aim: int = 0
 
 f = open("input.txt", "r")
