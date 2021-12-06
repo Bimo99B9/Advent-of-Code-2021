@@ -1,3 +1,8 @@
+'''
+Challenge: https://adventofcode.com/2021/day/6
+By Daniel Lopez Gala with ❤️
+'''
+
 # Each lanternfish creates a new lanternfish once every 7 days. (Counter 0-6, resets to 6).
 # Each lanternfish represented as the number of days until it creates a new lanternfish.
 # 3 -> 2 -> 1 -> 0 -> 6 and creates [new Lanternfish]. -> 5 -> 4...
@@ -33,4 +38,4 @@ def computeDay(fishes, day, maxday):
 # example = [3, 4, 3, 1, 2]      
 # computeDay(example, 0, 5)
 
-computeDay(fishes, 0, 256)
+computeDay(fishes, 0, 80)
