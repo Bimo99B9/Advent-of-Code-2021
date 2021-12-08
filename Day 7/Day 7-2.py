@@ -9,16 +9,13 @@ import sys
 # Horizontal position of each crab: Input.
 # Find optimal movement to align. (Less movements -> Cheapest fuel).
 
-# each 1 step, costs 1 more than the last. First step 1, second step costs 2...
+# Each 1 step, costs 1 more than the last. First step 1, second step costs 2...
 
 crabs = []
 data = open('input.txt', 'r').readlines()[0].strip().split(',')
 for each in data:
     crabs.append(int(each))
 
-
-# I know that it is not the most efficient approach, but man, if you're reading this. Those are funny scripting
-# challenges I'm solving while I try to pass my final exams in December, I only want'em to work fine.
 def computeCheapest(crabs):
     minimum = min(crabs)
     maximum = max(crabs)
