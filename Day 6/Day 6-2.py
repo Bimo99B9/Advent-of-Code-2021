@@ -35,5 +35,5 @@ def computeDay(fishes, day, pending):
 
 answer = 0
 for fish in fishes:
-    answer += computeDay(1, 256, fish)
+    answer += computeDay(1, 365, fish)
 print(answer)
