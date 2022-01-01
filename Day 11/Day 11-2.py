@@ -47,7 +47,7 @@ def flash(cavern, flashed, i, j):
             cavern[neigh[0]][neigh[1]] += 1
         for neigh in getNeighbours(i, j, len(cavern), len(cavern)):
             flash(cavern, flashed, neigh[0], neigh[1])
-    print(f'Number of flashes: {flashes}')
+    #print(f'Number of flashes: {flashes}')
     return flashes
 
 def computeStep(cavern, n):
@@ -69,10 +69,21 @@ def computeStep(cavern, n):
                 if not flashed[i][j]:
                     flash(cavern, flashed, i, j)
 
+        
         for i, row in enumerate(flashed):
             for j, column in enumerate(row):
                 if flashed[i][j] == True:
                     cavern[i][j] = 0
+
+        allflashed = True
+        for i, row in enumerate(cavern):
+            for j, column in enumerate(row):
+                if cavern[i][j] != 0:
+                    allflashed = False
+
+        if allflashed == True:
+            print(f'The first step when all flash is: {step + 1}')
+            return step + 1
         
         print(cavern)
 
@@ -88,5 +99,5 @@ for line in data:
 print('Original cavern')
 print(cavern)
 
-computeStep(cavern, 100)
+print(computeStep(cavern, 10000))
 print(f'Number of flashes: {flashes}')
