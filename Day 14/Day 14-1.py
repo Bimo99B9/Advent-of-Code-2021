@@ -45,7 +45,7 @@ def polymerization(template, rules):
 print(f'Original template: {template}')
 for i in range(steps):
     template = polymerization(template, rules)
-    #print(f'After step {i + 1}: {template}')
+    # print(f'After step {i + 1}: {template}')
 
 
 dict = {}
